@@ -1,2 +1,2 @@
-# exam
+# Eksāmens
 Sistēmu programmēšanas eksāmens
