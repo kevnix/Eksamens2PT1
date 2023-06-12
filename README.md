@@ -1,7 +1,8 @@
 # Eksāmens
 Sistēmu programmēšanas eksāmens
 ## TO DO
-- [ ] Use Case diagrammas
-- [ ] Activity diagramma
-- [ ] Programma
-- [ ] Prezentacija
+- [x] Use Case diagrammas
+- [x] Activity diagramma
+- [x] Programma
+- [ ] Mācību materiāls
+- [ ] Aizstāvēšanas prezentācija
