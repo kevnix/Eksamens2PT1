@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+bool atbildetsPareizi(char ievaditaAtbilde, char pareizasAtbildes[], int jautajums){
+    if(ievaditaAtbilde==pareizasAtbildes[jautajums]){
+      return true;
+    }else return false;
+  
+}
+
 int main() {
     string jautajumi[] = {
         "Kas ir sazarojuma konstrukcija?", //1
@@ -78,9 +85,10 @@ int main() {
         }while(atbildets!=true);
         
 
-        if (lietotajAtbilde == pareizasAtbildes[i]) {
+        if (atbildetsPareizi(lietotajAtbilde, pareizasAtbildes, i)==true) {
             punkti++;
         }
+        
         cout << endl;
     }
 
