@@ -74,4 +74,7 @@ int main() {
         }
         cout << endl;
     }
+
+    cout << "Tests pabeigts!" << endl;
+    cout << "Tavi punkti: " << punkti << "/10" << endl;
 }
