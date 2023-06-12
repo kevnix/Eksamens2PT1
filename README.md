@@ -1,5 +1,5 @@
 # Eksāmens
-Sistēmu programmēšanas eksāmens
+Sistēmu programmēšanas eksāmens.
 Šeit iekļautas UML diagrammas, testa programma, mācību materiāls un aizstāvēšanas prezentācija.
 Mācību materiāls ir word dokuments kurā pastāsta par sazarojuma konstrukcijām C++.
 ## TO DO
