@@ -58,27 +58,33 @@ int main() {
         'd', //11
         'a', //12
     };
-
-   char sakt;
+    
+    char lietotajAtbilde;
     cout<<"Tests par sazarojuma konstrukcijām programmēšanas valodā C++"<< endl;
     cout<<"Testā iekļauti 10 jautājumi un rezultātu iegūsi testa beigās" << endl;
     cout<<"ATBILDES RAKSTI AR MAZO BURTU" << endl;
     
     do{
       cout<<"y = sākt testu: ";
-      cin>>sakt;
-    }while(sakt!='y');
+      cin>>lietotajAtbilde;
+    }while(lietotajAtbilde!='y');
 
     int punkti=0;
-  
-    if(sakt=='y'){
+    
+    if(lietotajAtbilde=='y'){
       for (int i = 0; i < 10; i++) {
         cout << "JAUTĀJUMS " << i + 1 << "\n\n" << jautajumi[i] << endl;
         cout << izveles[i] << endl;
         
-        char lietotajAtbilde;
-        cout << "\nTava atbilde (ievadi a, b, c, vai d): ";
-        cin >> lietotajAtbilde;
+        bool atbildets=false;
+        do{
+          cout << "\nTava atbilde (ievadi a, b, c, vai d): ";
+          cin >> lietotajAtbilde;
+          if(lietotajAtbilde=='a' || lietotajAtbilde=='b' || lietotajAtbilde=='c' || lietotajAtbilde=='d'){
+            atbildets=true;
+          }
+        }while(atbildets!=true);
+        
 
         if (lietotajAtbilde == pareizasAtbildes[i]) {
             punkti++;
