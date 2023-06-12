@@ -59,4 +59,14 @@ int main() {
         'a', //12
     };
 
+    for (int i = 0; i < 10; i++) {
+        cout << "JAUTĀJUMS " << i + 1 << "\n" << jautajumi[i] << endl;
+        cout << izveles[i] << endl;
+
+        char lietotajAtbilde;
+        cout << "Tava atbilde (ievadi a, b, c, vai d): ";
+        cin >> lietotajAtbilde;
+
+        cout << endl;
+    }
 }
