@@ -7,3 +7,13 @@ Sistēmu programmēšanas eksāmens
 - [x] Programma
 - [ ] Mācību materiāls
 - [ ] Aizstāvēšanas prezentācija
+
+### Programma
+- [x] Jautājumi
+- [x] Atbildes
+- [x] Izvēles
+- [x] Testa apraksts
+- [x] Sākt testu
+- [x] Testa beigās iegūst rezultātu
+- [x] Iespēja atkārtot testu
+- [ ] Jautājumus izvēlas ar random
