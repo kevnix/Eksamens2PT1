@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     string jautajumi[] = {
-        "Kas ir sazarojuma konstrukcija?" //1
+        "Kas ir sazarojuma konstrukcija?", //1
         "Cik apgalvojumi veido sazarojuma konstrukcijas C++?", //2
         "Ko nozīmē !=?", //3
         "Ko nozīmē >=?", //4
@@ -58,15 +58,15 @@ int main() {
         'd', //11
         'a', //12
     };
-    
+
     int punkti = 0;
 
     for (int i = 0; i < 10; i++) {
-        cout << "JAUTĀJUMS " << i + 1 << "\n" << jautajumi[i] << endl;
+        cout << "JAUTĀJUMS " << i + 1 << "\n\n" << jautajumi[i] << endl;
         cout << izveles[i] << endl;
 
         char lietotajAtbilde;
-        cout << "Tava atbilde (ievadi a, b, c, vai d): ";
+        cout << "\nTava atbilde (ievadi a, b, c, vai d): ";
         cin >> lietotajAtbilde;
 
         if (lietotajAtbilde == pareizasAtbildes[i]) {
@@ -77,4 +77,6 @@ int main() {
 
     cout << "Tests pabeigts!" << endl;
     cout << "Tavi punkti: " << punkti << "/10" << endl;
+
+    return 0;
 }
