@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
 bool atbildetsPareizi(char ievaditaAtbilde, char pareizasAtbildes[], int jautajums){
@@ -57,6 +58,9 @@ int main() {
         'd', //9
         'a', //10
     };
+
+    vector<string>nepareiziAtbildetie;
+    vector<string>pareizasAtbildesList;
     
     char lietotajAtbilde;
     cout<<"Tests par sazarojuma konstrukcijām programmēšanas valodā C++"<< endl;
@@ -87,12 +91,23 @@ int main() {
 
         if (atbildetsPareizi(lietotajAtbilde, pareizasAtbildes, i)==true) {
             punkti++;
+        }else{
+          nepareiziAtbildetie.push_back(jautajumi[i]);
+          pareizasAtbildesList.push_back(atbildes[i]);
         }
         
         cout << endl;
     }
 
-    cout << "Tests pabeigts!" << endl;
-    cout << "Tavi punkti: " << punkti << "/10" << endl;
+      cout << "Tests pabeigts!" << endl;
+      cout << "Tavi punkti: " << punkti << "/10" << endl;
+      if(nepareiziAtbildetie.size()!=0 && pareizasAtbildesList.size()){
+        cout<<"\nNEPAREIZI ATBILDĒTIE JAUTAJUMI"<< endl;
+        for(int i=0; i<nepareiziAtbildetie.size(); i++){
+          cout<<endl;
+          cout<< nepareiziAtbildetie[i] << "\nPareizā atbilde: "<< pareizasAtbildesList[i]<< endl;
+        }
+      }
+      
     }
 }
