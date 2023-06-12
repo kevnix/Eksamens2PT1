@@ -58,6 +58,8 @@ int main() {
         'd', //11
         'a', //12
     };
+    
+    int punkti = 0;
 
     for (int i = 0; i < 10; i++) {
         cout << "JAUTĀJUMS " << i + 1 << "\n" << jautajumi[i] << endl;
@@ -67,6 +69,9 @@ int main() {
         cout << "Tava atbilde (ievadi a, b, c, vai d): ";
         cin >> lietotajAtbilde;
 
+        if (lietotajAtbilde == pareizasAtbildes[i]) {
+            punkti++;
+        }
         cout << endl;
     }
 }
