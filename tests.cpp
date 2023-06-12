@@ -5,7 +5,7 @@ using namespace std;
 string jautajumi[] = {
     "Kas ir sazarojuma konstrukcija?", //1
     "Cik apgalvojumi veido sazarojuma konstrukcijas C++?", //2
-    "Kurš apgalvojums veido sazarojuma konstrukciju?", //5
+    "Viena no sazarojuma konstrukcijām", //5
     "Kurā gadījumā labāk būtu izmantot switch?", //6
     "Ko nozīmē &&?", //7
     "Ko nozīmē ||?", //8
